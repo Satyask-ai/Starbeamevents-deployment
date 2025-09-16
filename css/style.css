@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #85caff; /* Very light gray background */
+    color: #333;
+}
+
+/* Navbar Customization */
+.navbar navbar-expand-lg bg-body-tertiary {
+    background-color: #1133f1;
+}
+.navbar {
+    background-color: #1133f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #192632; /* Soft gray brand color */
+}
+
+.nav-link {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #343a40; /* Darker gray on hover */
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item {
+    color: #6c757d;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay */
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 50px 0;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+    transition: transform 0.3s ease;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 70px 0;
+    text-align: center;
+    background-color: #f0f8ff; /* Very light blue background */
+}
+
+.about-us img {
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 20px;}
+
+.text-center my-4 {
+    text-align: center;
+    margin: 20px 0;
+}
